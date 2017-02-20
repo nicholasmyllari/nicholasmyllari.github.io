@@ -13,7 +13,7 @@
 .dropbtn {
     position: fixed;
     top: 0;
-    background-color: #4CAF50;
+    background-color: darkblue;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -34,7 +34,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: green;
+    background-color: blue;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -45,11 +45,8 @@
     text-decoration: none;
     display: block;
 }
-.dropdown-content a:hover {background-color: darkgreen}
+.dropdown-content a:hover {background-color: darkblue}
 
-.top {
-    img
-}
 .posts {
     display: flex;
     flex-wrap: wrap;
@@ -70,17 +67,17 @@
     padding: 15px
 }
 .feature {
-   background-color: greenyellow;
+   background-color: lightblue;
 }
 .action {
-   background-color: forestgreen;
+   background-color: dodgerblue;
 }
 .post {
-    background-color: lawngreen;
+    background-color: skyblue;
 }
 .end {
     width: 100%;
-    background-color: bisque;
+    background-color: lightcyan;
     font-size: 20px;
 }
 
