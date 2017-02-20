@@ -1,3 +1,9 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite
+}
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -29,13 +35,6 @@
 }
 .dropdown-content a:hover {background-color: darkgreen}
 
-
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: antiquewhite
-}
 .posts {
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +43,7 @@
 
 .section {
   width: 100%;
-  height: 500px;
+  height: auto;
   display: block;
   justify-content: center;
   align-items: center;
@@ -57,13 +56,19 @@
     padding: 15px
 }
 .feature {
-   background-color: aqua;
+   background-color: greenyellow;
 }
 .action {
-   background-color: aqua;
+   background-color: forestgreen;
 }
 .post {
-    background-color: cadetblue;
+    background-color: lawngreen;
+}
+.end {
+    background-color: beige
+}
+.info {
+    
 }
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     .feature {
@@ -75,15 +80,10 @@
 }
 @media only screen and (min-width: 961px) {
     .content {
-        width: 980px;
+        width: 960px;
         margin: 0 auto;
     }
-    .action {
-        width: 960px;
-    }
-    .post {
-        width: 960px;
-    }
+
     .feature {
         width: 305px;
     }
