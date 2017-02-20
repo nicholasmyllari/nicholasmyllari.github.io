@@ -38,7 +38,6 @@
 .posts {
     display: flex;
     flex-wrap: wrap;
-    background-color: aquamarine
 }
 
 .section {
@@ -85,6 +84,7 @@
     }
 
     .feature {
-        width: 305px;
+        width: 320px;
     }
+    
 }
