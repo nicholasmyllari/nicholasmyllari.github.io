@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 .content {
     display: flex;
     flex-wrap: wrap;
     background-color: antiquewhite
+}
+
+.top h1 {
+    font-family: 'Oswald'
 }
 
 .dropbtn {
@@ -35,6 +41,9 @@
 }
 .dropdown-content a:hover {background-color: darkgreen}
 
+.top {
+    img
+}
 .posts {
     display: flex;
     flex-wrap: wrap;
