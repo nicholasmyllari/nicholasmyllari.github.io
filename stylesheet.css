@@ -34,6 +34,11 @@
 .content {
     display: flex;
     flex-wrap: wrap;
+    background-color: antiquewhite
+}
+.posts {
+    display: flex;
+    flex-wrap: wrap;
     background-color: aquamarine
 }
 
