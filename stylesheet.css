@@ -22,13 +22,11 @@
 }
 .dropdown {
     position: fixed;
-    top: 0;
+    top: 28px;
     position: relative;
     display: inline-block;
 }
 .dropdown:hover .dropdown-content {
-    position: fixed;
-    top: 0;
     display: block;
 }
 .dropdown-content {
