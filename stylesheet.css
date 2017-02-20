@@ -7,7 +7,7 @@
 }
 
 .top h1 {
-    font-family: 'Oswald'
+    font-family: 'Oswald';
 }
 
 .dropbtn {
@@ -73,7 +73,8 @@
     background-color: lawngreen;
 }
 .end {
-    background-color: beige
+    background-color: beige;
+    font-size: 20px
 }
 .info {
     
