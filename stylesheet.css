@@ -11,6 +11,8 @@
 }
 
 .dropbtn {
+    position: fixed;
+    top: 0;
     background-color: #4CAF50;
     color: white;
     padding: 16px;
@@ -19,10 +21,14 @@
     cursor: pointer;
 }
 .dropdown {
+    position: fixed;
+    top: 0;
     position: relative;
     display: inline-block;
 }
 .dropdown:hover .dropdown-content {
+    position: fixed;
+    top: 0;
     display: block;
 }
 .dropdown-content {
@@ -73,12 +79,11 @@
     background-color: lawngreen;
 }
 .end {
-    background-color: beige;
-    font-size: 20px
+    width: 100%;
+    background-color: bisque;
+    font-size: 20px;
 }
-.info {
-    
-}
+
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     .feature {
         width: 50%;
