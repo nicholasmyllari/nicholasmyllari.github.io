@@ -6,120 +6,80 @@
     border: none;
     cursor: pointer;
 }
-
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
-/* Dropdown Content (Hidden by Default) */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: green;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
-/* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
+.dropdown-content a:hover {background-color: darkgreen}
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aquamarine
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+.section {
+  width: 100%;
+  height: 500px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
-.navigation {
-    background-color: black; 
-    text-align: center;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+.section h2 {
+    padding: 15px
 }
-
-
-.navigation li {
-    display: inline-block;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    margin-right: 10px;
+.section p {
+    padding: 15px
 }
-
-.navigation ul {
-    height: 50px
+.feature {
+   background-color: aqua;
 }
-
-.navigation a {
-    text-decoration: none;
-    color: aliceblue;
+.action {
+   background-color: aqua;
 }
-.navigation a:hover {
-    color: bisque;
+.post {
+    background-color: cadetblue;
 }
-
-
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .feature {
+        width: 50%;
+    }
+    .action {
+        width: 50%;
+    }
 }
-
-.dropdown-content {
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
-.blog-post {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: antiquewhite;
-    
-}
-.blog-post h2{
-    transition: 1s;
-    font-size: 5em;
-}
-.resize {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-}
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
-
-}
-.video-container iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+@media only screen and (min-width: 961px) {
+    .content {
+        width: 980px;
+        margin: 0 auto;
+    }
+    .action {
+        width: 960px;
+    }
+    .post {
+        width: 960px;
+    }
+    .feature {
+        width: 305px;
+    }
 }
