@@ -1,7 +1,7 @@
 function getRandomInteger(min, max) {
     'use strict';
-    var x = Math.floor(Math.random() * max)
-    if (x >= min) {
+    var x = Math.floor(Math.random() * max + 1)
+    if (x > min-1) {
         return (x);
     } else {
         getRandomInteger(min, max)
