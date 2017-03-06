@@ -1,12 +1,10 @@
 var playing = true;
 var news = null;
-if (localStorage.current) {
-	localStorage.current = Number(localStorage.current);
-} else {
+if (!localStorage.current) {
 	localStorage.current = 0;
 }
 
-var timer = window.setInterval(function(){naturalNext();},3000);
+var timer = window.setInterval(function(){naturalNext();},6000);
 
 function setNews() {
 	$('.news').fadeOut(400, function() {
@@ -18,9 +16,9 @@ function setNews() {
 }
 function togglePauseText() {
 	if (playing) {
-		document.getElementById("pause").textContent = "pysäytä";
+		document.getElementById("pause").textContent = "Pysäytä";
 	} else {
-		document.getElementById("pause").textContent = "jatka";
+		document.getElementById("pause").textContent = "Jatka";
 	}
 }
 window.onload = function() {
@@ -36,7 +34,7 @@ function playPause() {
 		clearInterval(timer);
 	} else {
 		playing = true;
-		timer = window.setInterval(function(){naturalNext();},3000); 
+		timer = window.setInterval(function(){naturalNext();},6000); 
 	}
 	togglePauseText();
 }
