@@ -10,6 +10,8 @@
         <title> Ydinvoima </title>
         <link rel="normalize" type="text/css" href="normalize.css">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="slideshow.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" type="text/javascript"></script>
     </head>
      <body class="content">
          <nav class="navigation">
@@ -48,6 +50,19 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus diam dignissim lectus convallis bibendum. Vestibulum eleifend congue diam in luctus.
                 </p>
             </article>
+            <section id="carusel" class="section carusel">
+                <h2>Uutisia</h2>
+                <div id="controls">
+                  <button id="prev" onclick="prev()" type:"button">Edellinen</button>
+                  <button id="pause" onclick="playPause()" type:"button">Pysäytä</button>
+                  <button id="next" onclick="next()" type:"button">Seuraava</button>
+                </div>
+                <div id="news">
+                   <div class="news" id="newsHeadline"></div>
+                   <div class="news" id="newsContent"></div>
+                   <div class="news" id="newsDate"></div>
+                </div>
+            </section>
             <article id="corp" class="section post">
                 <h2>Yrityksille</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus diam dignissim lectus convallis bibendum. Vestibulum eleifend congue diam in luctus. Nullam augue libero, iaculis id semper vitae, convallis eu erat. Vestibulum sit amet ullamcorper quam. Fusce egestas semper dignissim. Suspendisse vulputate, erat ut placerat vestibulum, nibh mi consequat sapien, a aliquet ante diam nec eros. Ut non placerat quam.
@@ -64,6 +79,7 @@
                 </p>
             </article>
         </section>
+        
         <footer class="end">
             <ul> 
                 <a> Made by Nicholas Mylläri</a>

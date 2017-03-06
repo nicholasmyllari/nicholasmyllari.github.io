@@ -66,11 +66,18 @@
 .section p {
     padding: 15px
 }
+.news {
+    padding: 15px;
+}
 .feature {
    background-color: lightblue;
 }
 .action {
    background-color: dodgerblue;
+}
+.carusel {
+    background-color: lightblue;
+    height: 550px;
 }
 .post {
     background-color: skyblue;
@@ -88,6 +95,9 @@
     .action {
         width: 50%;
     }
+    .carusel {
+        height: 400px;
+    }
 }
 @media only screen and (min-width: 961px) {
     .content {
@@ -97,6 +107,9 @@
 
     .feature {
         width: 320px;
+    }
+    .carusel {
+        height: 330px;
     }
     
 }
