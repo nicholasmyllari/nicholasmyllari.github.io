@@ -63,6 +63,42 @@
                    <div class="news" id="newsDate"></div>
                 </div>
             </section>
+
+            <section id="video" class="section video">
+                <h2>Video</h2>
+                <video width="95%" height="auto" poster="assets/VJPVideoScreenshot.jpg" controls>
+                    <source src="assets/VJPVideoMP4.mp4" type="video/mp4">
+                    <source src="assets/VJPVideoWEBM.WebM" type="video/WebM">
+                    <source src="assets/VJPVideoOGG.ogv" type="video/ogg">
+                    <object width="640" height="360" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+                        <param name="movie" value="__FLASH__.SWF" />
+                        <param name="flashvars" value="controlbar=over
+                        &amp;image=assets/VJPVideoScreenshot.jpg
+                        &amp;file=assets/VJPVideoMP4.mp4" />
+                    </object>
+                </video>
+                <p> <strong>Download Video:</strong>
+                     <a href="assets/VJPVideoMP4.mp4">mp4 Download</a>
+                     <a href="assets/VJPVideoWEBM.WebM">WebM Download</a>
+                     <a href="assets/VJPVideoOGG.ogv">ogg Download</a>
+                </p>
+            </section>
+
+            <section id="canvas" class="section canvas video">
+                <h2>Canvas and video</h2>
+                <div id="controls">
+                  <button id="blackWhite" onclick="blackWhite()" type:"button">Black n' White</button>
+                  <button id="inverse" onclick="inverse()" type:"button">Inverse</button>
+                  <button id="coolstuff" onclick="coolstuff()" type:"button">Coolstuff</button>
+                </div>
+                <canvas id=c> </canvas>
+                <video id=v width="95%" height="auto" poster="assets/VJPVideoScreenshot.jpg" controls>
+                    <source src="assets/VJPVideoMP4.mp4" type="video/mp4">
+                    <source src="assets/VJPVideoWEBM.WebM" type="video/WebM">
+                    <source src="assets/VJPVideoOGG.ogv" type="video/ogg">
+                </video>
+            </section>
+
             <article id="corp" class="section post">
                 <h2>Yrityksille</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus diam dignissim lectus convallis bibendum. Vestibulum eleifend congue diam in luctus. Nullam augue libero, iaculis id semper vitae, convallis eu erat. Vestibulum sit amet ullamcorper quam. Fusce egestas semper dignissim. Suspendisse vulputate, erat ut placerat vestibulum, nibh mi consequat sapien, a aliquet ante diam nec eros. Ut non placerat quam.
