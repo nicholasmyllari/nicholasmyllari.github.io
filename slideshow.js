@@ -69,11 +69,11 @@ var context = canvas.getContext('2d');
 var back = document.createElement('canvas');
 var backcontext = back.getContext('2d');
 
-var cw,ch;
+var cw = 1000;
+var ch = 600;
 
 function blackWhite(){
-    cw = 600px;
-    ch = 600px;
+
     canvas.width = cw;
     canvas.height = ch;
     back.width = cw;
@@ -97,7 +97,7 @@ function draw(v,c,bc,w,h) {
         data[i] = brightness;
         data[i+1] = brightness;
         data[i+2] = brightness;
-    }
+    };
     idata.data = data;
     // Draw the pixels onto the visible canvas
     c.putImageData(idata,0,0);
