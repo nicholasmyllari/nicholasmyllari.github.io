@@ -62,3 +62,10 @@ function drawAndMoveEnemies(context) {
     context.closePath();  
   }
 }
+function removeEnemy(clickX, clickY) {
+     for(i = 0; i < enemies.length; i++){
+        var e = enemies[i]
+        if(Math.abs(e.x-clickX) < 20 && Math.abs(e.y-clickY) < 20)
+          enemies.splice(i,1)
+     }
+}
