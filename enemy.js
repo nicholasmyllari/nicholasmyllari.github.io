@@ -51,11 +51,9 @@ function drawAndMoveEnemies(context) {
                 n.ySpeed = -n.ySpeed;
             }
             if (Math.sqrt(Math.pow((player.x-n.x),2) + Math.pow((player.y - n.y),2)) < 40) {
-                e.xSpeed = -e.xSpeed;
                 n.xSpeed = -n.xSpeed;
-                e.ySpeed = -e.ySpeed;
                 n.ySpeed = -n.ySpeed;
-            }
+            };
         };
     }
     context.fillStyle = 'lightgreen';
@@ -64,4 +62,3 @@ function drawAndMoveEnemies(context) {
     context.closePath();  
   }
 }
-

@@ -50,6 +50,3 @@ function movePlayer(dir) {
       break;
   }
 }
-function removeEnemy(clickX, clickY) {
-     for(i = 0; i < enemies.length; i++){
-     }

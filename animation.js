@@ -71,6 +71,24 @@ var update = function(delta) {
     }
 };
 
+function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
+    };
+}
+canvas.addEventListener("mousedown", function(e) {
+     removeEnemy(getMousePos(canvas,e).x, getMousePos(canvas,e).y);
+  })
+function removeEnemy(clickX, clickY) {
+     for(i = 0; i < enemies.length; i++){
+        var e = enemies[i]
+        if(Math.abs(e.x-clickX) < 20 && Math.abs(e.y-clickY) < 20)
+          enemies.splice(i,1)
+     }
+}
+
 /* Time-based motion animation */
 var main = function() {
   var now = Date.now();
