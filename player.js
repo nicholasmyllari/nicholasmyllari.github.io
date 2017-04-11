@@ -23,6 +23,8 @@ function changeSpeed(change) {
 }
 
 function movePlayer(dir) {
+  var oldX = player.x;
+  var oldY = player.y;
   switch (dir) {
     case "left": 
       player.x -= player.speed;
@@ -49,4 +51,11 @@ function movePlayer(dir) {
       }
       break;
   }
+  for(i = 0; i < enemies.length; i++){
+    var e = enemies[i];
+    if(Math.abs(e.x-player.x-20) < 40 && Math.abs(e.y-player.y-20) < 40) {
+      player.x = oldX;
+      player.y = oldY;
+    };
+  };
 }
