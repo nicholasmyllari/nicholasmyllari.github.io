@@ -103,7 +103,7 @@ create: function() {
     game.physics.arcade.overlap(player, emeralds, collectEmerald, null, this);
 
     coalText.text = 'CO2 Level is : ' + coalMeter;
-    if (coalMeter > 1000) {
+    if (coalMeter > 4000) {
         game.state.start('gameOver');
     };
         
